@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import CSVTable from './components/forms/CSVForm';
+import MultiPageForm from './components/organisms/MultiPageForm';
+
 
 function App() {
+  const isMobile = window.innerWidth < 500;
+
   return (
     <div className="App">
-        <CSVTable/> 
+          <h1> Data Set Classification </h1> 
+          <MultiPageForm />
     </div>
   );
 }
